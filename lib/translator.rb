@@ -11,8 +11,16 @@ def load_library(file)
   library
 end
 
-def get_japanese_emoticon
-  # code goes here
+
+def get_japanese_emoticon(file, western_emoticon)
+ require 'pry'
+ #library = {}
+ #binding.pry
+  library = load_library(file)
+  #binding.pry
+ a = library["get_emoticon"].fetch(western_emoticon, "emoticon not found")
+ #binding.pry
+ a
 end
 
 def get_english_meaning
