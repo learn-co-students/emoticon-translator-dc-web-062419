@@ -13,13 +13,9 @@ end
 
 
 def get_japanese_emoticon(file, western_emoticon)
- require 'pry'
- #library = {}
- #binding.pry
   library = load_library(file)
   #binding.pry
- a = library["get_emoticon"].fetch(western_emoticon, "emoticon not found")
- #binding.pry
+ a = library["get_emoticon"].fetch(western_emoticon, "Sorry, that emoticon was not found")
  a
 end
 
